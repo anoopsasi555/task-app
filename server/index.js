@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 4000;
 
 const app = express();
 
-app.use(cors({ path: "http://localhost:5176" }));
+app.use(cors({ path: "http://localhost:5173" }));
 
 //parse oncoming request bodies
 app.use(bodyParser.json());

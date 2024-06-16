@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "51711741-2ce3-4e5f-a9e9-e229f37d4174",
+		"name": "Tasks",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31794974"
+	},
+	"item": [
+		{
+			"name": "Task",
+			"item": [
+				{
+					"name": "Update Task",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "heading",
+									"value": "sampl",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "sampl desc",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "10-10-2024",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "10:00",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"value": "",
+									"type": "file",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/tasks/20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tasks",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Task",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "heading",
+									"value": "sample",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "sampl desc",
+									"type": "text"
+								},
+								{
+									"key": "date",
+									"value": "10-10-2024",
+									"type": "text"
+								},
+								{
+									"key": "time",
+									"value": "10:00",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/alan/Pictures/Screenshots/Screenshot from 2024-06-13 08-44-01.png"
+								},
+								{
+									"key": "priority",
+									"value": "low",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/tasks",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Task",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/alan/Pictures/Screenshots/Screenshot from 2024-06-13 08-44-01.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/tasks/20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tasks",
+								"20"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Tasks",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/alan/Pictures/Screenshots/Screenshot from 2024-06-13 08-44-01.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/tasks",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Task",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/home/alan/Pictures/Screenshots/Screenshot from 2024-06-13 08-44-01.png"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{url}}/tasks/20",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"tasks",
+								"20"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

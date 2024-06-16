@@ -23,8 +23,6 @@ app.get("/", (req, res) => {
   res.json({ message: "Welcome to tasks app api" });
 });
 
-// app.listen(PORT, console.log(`server is running on port ${PORT}`));
-
 async function connect() {
   try {
     await sequelize.authenticate();

@@ -1,8 +1,8 @@
 # SERVER
 
-## 1.Run docker-compose.local.yml or update database configuration at /server/ config/config.json
+## 1.Run docker-compose.local.yml or update database configuration at /server/config/config.json
 
-## 2.Restore database backup(tasks-db.sql attached in mail)
+## 2.Restore database backup(db-backup/tasks-db.sql)
 
 ## 3.Navigate to /server
 
